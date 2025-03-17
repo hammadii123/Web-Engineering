@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section style="display: flex;" id="about">
+        <div class="col1">
+        <h2>About Me</h2>
+        <p>Hello! I am an aspiring web developer with a passion for coding and problem-solving.</p>
+    </div>
+    <div class="col2" style="display: contents;">
+        <img src="assets/myImage.jpg" alt="My Profile Photo" class="profile-img">
+    </div>
+    </section>
+
+    <section id="education">
+        <h2>Education & Training</h2>
+        <ul>
+            <li>Bachelor's in Software Engineering - Sir Syed University</li>
+            <li> Web Developer - Xevens Solutions</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="assets/proj2.PNG" alt="Project 1">
+            <p><strong>Portfolio Website</strong> - A personal portfolio showcasing my skills.</p>
+        </div>
+        <div class="project">
+            <img src="assets/proj1.PNG" alt="Project 2">
+            <p><strong>E-commerce Website</strong> - Developed a fully functional online store.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React.js, Next.js</li>
+            <li>Python, Django</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
