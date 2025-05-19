@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Counter App</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 id="counter">Counter: 0</h1>
+  <button id="incrementBtn">Increment</button>
+  <button id="decrementBtn">Decrement</button>
+
+
+  <br><br><br><br><br><br>
+  <button onclick="visitSite()">Visit a Search Engine</button>
+
+  <script>
+    
+    let count = 0;
+
+    
+    const counterDisplay = document.getElementById('counter');
+    const incrementBtn = document.getElementById('incrementBtn');
+    const decrementBtn = document.getElementById('decrementBtn');
+
+    // Increment button logic
+    incrementBtn.addEventListener('click', () => {
+      count++;
+      counterDisplay.textContent = `Counter: ${count}`;
+    });
+
+    // Decrement button logic
+    decrementBtn.addEventListener('click', () => {
+      if (count > 0) {
+        count--;
+        counterDisplay.textContent = `Counter: ${count}`;
+      }
+    });
+
+
+
+  </script>
+
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
