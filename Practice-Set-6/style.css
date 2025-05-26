@@ -1,0 +1,25 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.question {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.answer {
+    display: none;
+    background-color: #d9f2d9;
+
+    padding: 10px;
+    margin: 0;
+}
+
+
+.question.hovered {
+    background-color: #cce5ff;
+}
